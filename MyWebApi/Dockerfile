@@ -1,7 +1,6 @@
 FROM mcr.microsoft.com/dotnet/aspnet:7.0 AS base
 WORKDIR /app
 EXPOSE 80
-
 #FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
 #WORKDIR /src
 #COPY ["/MyWebApi.csproj", "./MyWebApi/"]
@@ -12,7 +11,7 @@ EXPOSE 80
 
 ADD bin/Release/net7.0/publish/ /app/publish/
 ADD ./Keys/ /app/publish/Keys/
-ENV GOOGLE_APPLICATION_CREDENTIALS=/app/publish/Keys/cybersecurity-class-404013-6f8510532d40.json
+ENV GOOGLE_APPLICATION_CREDENTIALS=/app/publish/Keys/firestore-cybersecurity-class-404013.json
 #FROM build AS publish
 #RUN dotnet publish "MyWebApi.csproj" -c Release -o /app/publish
 
