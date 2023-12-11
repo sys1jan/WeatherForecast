@@ -1,4 +1,6 @@
 MyWebApi/Keys/
+MyWebApi.Tests/bin
+MyWebApi.Tests/obj
 MyWebApi/bin
 MyWebApi/obj
 MyWebApi/Keys/firestore-cybersecurity-class-404013.json
