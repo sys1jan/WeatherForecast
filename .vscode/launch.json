@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/MyWebApi/bin/Debug/net7.0/MyWebApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "^\\s*Now listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "GOOGLE_APPLICATION_CREDENTIALS": "/Users/jeffneal/projects/dotnet_source/MyWebApi/MyWebApi/Keys/cybersecurity-class-404013-6f8510532d40.json"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/MyWebApi/Views"
+            }
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyWebApi</name>
+    </assembly>
+    <members>
+        <member name="T:MyWebApi.Controllers.WeatherForecastController">
+            <summary>
+            This controller is responsible for handling weather forecasts.
+            </summary>
+        </member>
+        <member name="M:MyWebApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            Get a list of weather forecasts.
+            </summary>
+            <returns>A list of weather forecasts.</returns>
+        </member>
+        <member name="M:MyWebApi.Controllers.WeatherForecastController.Insert(MyWebApi.Models.WeatherForecast)">
+            <summary>
+            Insert a new weather forecast.
+            </summary>
+            <param name="forecast">The weather forecast to insert.</param>  
+            <returns>The inserted weather forecast.</returns>
+            <response code="201">Returns the newly created weather forecast.</response>
+            <response code="400">If the weather forecast is null.</response>
+            <response code="500">If there was an error inserting the weather forecast.</response>
+            remarks>           
+        </member>
+        <member name="M:MyWebApi.Controllers.WeatherForecastController.Update(System.String,MyWebApi.Models.WeatherForecast)">
+            <summary>
+            Update an existing weather forecast.
+            </summary>
+            <param name="id">The id of the weather forecast to update.</param>
+            <param name="forecast">The updated weather forecast.</param>
+            <returns></returns>
+            <response code="204">Returns no content if the weather forecast was updated successfully.</response>
+            <response code="400">If the weather forecast is null.</response>
+            <response code="500">If there was an error updating the weather forecast.</response>
+            remarks>
+        </member>
+        <member name="M:MyWebApi.Controllers.WeatherForecastController.GetForecast(System.String)">
+            <summary>
+               Get a weather forecast by id.
+               </summary>
+               <param name="id">The id of the weather forecast to get.</param>
+               <returns>The weather forecast.</returns>
+               <response code="200">Returns the weather forecast.</response>
+               <response code="404">If the weather forecast is null.</response>
+               <response code="500">If there was an error getting the weather forecast.</response>
+               remarks>
+        </member>
+        <member name="T:MyWebApi.Models.WeatherForecast">
+            <summary>
+            Represents a weather forecast.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.Id">
+            <summary>
+            Document ID of the forecast.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.Date">
+            <summary>
+            Gets or sets the date of the forecast.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.Name">
+            <summary>
+            Gets or sets the name of the forecast.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.TemperatureC">
+            <summary>
+            Gets or sets the temperature in Celsius.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.TemperatureF">
+            <summary>
+            Gets or sets the temperature in Fahrenheit.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.Summary">
+            <summary>
+            Gets or sets the summary of the forecast.
+            </summary>
+        </member>
+        <member name="P:MyWebApi.Models.WeatherForecast.Description">
+            <summary>
+            Gets or sets the detailed description of the forecast.
+            </summary>
+        </member>
+    </members>
+</doc>
