@@ -15,6 +15,13 @@ namespace MyWebApi.Models
         public string? Id { get; set; }
 
         /// <summary>
+        /// Gets or sets the city of the forecast.
+        /// </summary>
+        [FirestoreProperty]
+        public string? City { get; set; }
+       
+
+        /// <summary>
         /// Gets or sets the date of the forecast.
         /// </summary>
         [FirestoreProperty]
@@ -26,6 +33,13 @@ namespace MyWebApi.Models
         [FirestoreProperty]
         public required string Name { get; set; }
         
+        /// <summary>
+        /// Gets or sets the feels like in Fahrenheit.
+        /// </summary>
+        [FirestoreProperty]
+        public long FeelsLike { get; set; }
+
+
         /// <summary>
         /// Gets or sets the temperature in Celsius.
         /// </summary>

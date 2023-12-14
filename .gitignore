@@ -4,3 +4,4 @@ MyWebApi.Tests/obj
 MyWebApi/bin
 MyWebApi/obj
 MyWebApi/Keys/firestore-cybersecurity-class-404013.json
+.DS_Store
